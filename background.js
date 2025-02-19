@@ -204,7 +204,7 @@ function handleErrorsRequest(data, sender, sendResponse) {
 
 		chrome.pageAction.show(sender.tab.id);
 
-		sendResponse(chrome.extension.getURL(popupUri));
+		sendResponse(runtime.getURL(popupUri));
 	});
 }
 

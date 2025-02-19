@@ -33,7 +33,7 @@ new function() {
 
 		if(!icon && (options.showIcon || options.showPopup)) {
 			icon = document.createElement('img');
-			icon.src = chrome.extension.getURL('img/error_38.png');
+			icon.src = runtime.getURL('img/error_38.png');
 			icon.title = 'Some errors occurred on this page. Click to see details.';
 			icon.style.cssText = 'position: fixed !important; bottom: 10px !important; right: 10px !important; cursor: pointer !important; z-index: 2147483647 !important; width: 38px !important; height: 38px !important; min-height: 38px !important; min-width: 38px !important; max-height: 38px !important; max-width: 38px !important;';
 			icon.onclick = function() {
